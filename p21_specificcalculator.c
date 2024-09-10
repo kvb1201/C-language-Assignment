@@ -14,6 +14,7 @@ int main()
      printf("Enter * to perform multiplication \n");
     printf("Enter / to perform division \n");
     scanf("%d",&x);
+    scanf("%d",&x);
     switch(x)
     {
         case '+'://User wants to do addition
