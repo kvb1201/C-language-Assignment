@@ -8,7 +8,8 @@ int main()
     scanf("%d",&n);
 
     printf("Enter the Numbers");
-    scanf("%d%d",&max,&min);
+    scanf("%d",&max);
+    min=max;
     for(i=2;i<n;i++)
     {
         int num;
