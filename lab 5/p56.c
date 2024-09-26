@@ -11,8 +11,8 @@ int main()
         scanf("%d",&a[i]);
       
     }
-    printf("\nMatrix A is\n");
-     // Printing Matrix A
+    printf("\n Your Array is\n");
+     // Printing Array
     for(int i=0;i<10;i++)
     {
         printf("%d\t",a[i]);   
