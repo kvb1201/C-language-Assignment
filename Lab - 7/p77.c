@@ -1,36 +1,32 @@
 /*Program to check whether a number is Palindrom or not using functions*/
 
 #include<stdio.h>
-void palindrom(int number)//Function Defination
-{
-  int  original,b,c=0;
-   original=number;
+void Palindrom(int num);//Function Prototype
 
-    while(number>0)
-    {
-        b=number%10;
-        c=c*10+b;
-        number=number/10;}
-        
- if(original==c)
-    {
-        printf("%d is a Palindrom number",original);
-    }
-    else
-    {
-        printf("%d is not a Palindrom number",original);
-    }
-     
-}
 int main()
+ {
+    int num;
+    printf("Enter the Number");
+    scanf("%d",&num);
+     Palindrom(num);//Calling Function
+ }
+void Palindrom(int num)//Function Defination
 {
-    int number,original,b,c=0;
-    printf("Enter the number");
-    scanf("%d",&number);
-     
-     palindrom(number);//Calling Function
-   
-         
-    
-   return 0;
+    int x=0,q;
+    int a;
+    a=num;
+    while(num>0)
+    {
+        q=num%10;
+        x=x*10+q;
+        num=num/10;
     }
+if(x==a)
+    {
+        printf("%d is Palindrom number",a);
+    }
+else
+    {
+         printf("%d is not Palindrom number",a);
+    }
+}
