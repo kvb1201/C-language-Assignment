@@ -1,19 +1,6 @@
 /*Program to read an Array and find out maximum number among them */
 #include<stdio.h>
-int maximum(int n,int a[])
-{
-    int Max;
-    Max=0;
-    for(int i=0;i<n;i++)
-    {
-        if(a[i]>Max)
-        {
-            Max=a[i];
-        }
-    }
-   return Max;
-
-}
+int maximum(int n,int a[]);//Function Prototype
 
 int main()
 {
@@ -32,9 +19,20 @@ int main()
         printf("%d\t",a[i]);
     }
     printf("\n");
-   int Max= maximum(n,a);
-    printf("Maximum number is %d\n",Max);
-    return 0;  
+   int Max= maximum(n,a);//Calling Function
 
+}
+int maximum(int n,int a[])//Function Defination
+{
+    int Max;
+    Max=0;
+    for(int i=0;i<n;i++)
+    {
+        if(a[i]>Max)
+        {
+            Max=a[i];
+        }
+    }
+   printf("Maximum number is %d\n",Max);
 
 }
