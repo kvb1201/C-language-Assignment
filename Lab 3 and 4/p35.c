@@ -20,6 +20,17 @@ int main()
 
     // Print the sum of digits
     printf("Sum of digits: %d\n", sum);
+  int a=0;
+    while(sum>=10)
+    {
+        while (sum!=0)
+        {
+            a=a + sum%10;
+            sum=sum/10;
+        }
+        sum=a;
+        
+    }
 
     return 0;
 }
