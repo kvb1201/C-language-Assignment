@@ -5,9 +5,9 @@
 int main()
 {
     int a=0,b=1,n,next=0;
-    printf("enter vaalue of number of terms");
+    printf("Enter value of number of terms\n");
     scanf("%d",&n);
-    printf("Fibonaci series of %d terms\n",n);
+    printf("%d terms of Fibonacci Series : \n",n);
 
     for (int i=1;i<=n;i++)
     {
